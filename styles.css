@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  width: 90%;
+  line-height: 1.5;
+  margin: 0 auto;
+  color: #262626;
+}
+
+a {
+  text-decoration: none;
+}
+/* Nav Bar Starts */
+.logo {
+  width: 137px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.main-nav {
+  /* border: 1px solid red; */
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.main-nav li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 2;
+  /* border: 1px solid blue; */
+}
+
+.nav-right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-right img {
+  width: 20px;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid #262626;
+  padding-bottom: 2px;
+}
+/* Nav Bar Ends */
+
+/* Showcase Section Start*/
+
+.btn {
+  background: #262626;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.showcase {
+  width: 100%;
+  background: #f3f3f3;
+  height: 400px;
+
+  background: url("./img/surface.png") no-repeat center center/cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+/* Showcase Section End*/
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
