@@ -105,3 +105,54 @@ a {
 .showcase .btn {
   margin-top: 20px;
 }
+
+/* Home Cards 1 Start */
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* .home-cards p {
+  margin-bottom: 10px;
+} */
+
+.home-cards a {
+  display: inline-block;
+  color: #237bc1;
+  padding-top: 10px;
+  font-weight: 600;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+.home-cards a:hover {
+  border-bottom: 2px solid #237bc1;
+}
+
+@keyframes border-animation {
+  0% {
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-bottom: 1px;
+    margin-left: 5px;
+  }
+  100% {
+    margin-bottom: 2px;
+    margin-left: 10px;
+  }
+}
+/* Home Cards 1 End */ ;
