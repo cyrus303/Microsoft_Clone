@@ -8,10 +8,13 @@
 body {
   font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  width: 90%;
   line-height: 1.5;
-  margin: 0 auto;
   color: #262626;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -66,6 +69,19 @@ a {
 }
 /* Nav Bar Ends */
 
+/* Hamburger Menu Button Starts */
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  z-index: 2;
+  display: none;
+}
+
+/* Hamburger Menu Button Ends */
+
 /* Showcase Section Start*/
 
 .btn {
@@ -113,6 +129,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .home-cards img {
@@ -155,4 +172,290 @@ a {
     margin-left: 10px;
   }
 }
-/* Home Cards 1 End */ ;
+/* Home Cards 1 End */
+
+/* Xbox Section Start */
+
+.xbox {
+  background: url("https://i.ibb.co/tBJGPD9/xbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 350px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.xbox .content {
+  padding: 50px 0 0 30px;
+  width: 40%;
+}
+
+.xbox p {
+  margin: 10px 0 20px 0;
+}
+/* Xbob Section End */
+
+/* Carbon Section Start*/
+
+.carbon {
+  background-image: url("https://i.ibb.co/72cgtsz/carbon.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 350px;
+  width: 100%;
+}
+
+.carbon .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+}
+
+.carbon h2,
+.carbon p {
+  margin-bottom: 20px;
+}
+.carbon .btn {
+  background-color: white;
+  color: black;
+}
+
+/* Carbon Section End */
+
+/* Follow Section Starts */
+.follow {
+  display: flex;
+  justify-content: flex-start;
+  margin: 40px 0 40px 0;
+  width: 35%;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+.follow img {
+  margin-left: 10px;
+  display: flex;
+}
+
+/* Follow Section Ends */
+
+/* Covid Section Starts */
+
+.covid19 {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 200px;
+  background-color: #e6e6e6;
+  margin-bottom: 40px;
+  /* text-align: center; */
+}
+
+.covid19 h1 {
+  font-family: Segoe UI;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40px;
+  /* text-align: center; */
+}
+
+.covid19 p {
+  font-size: 15px;
+}
+
+.covid19 .btn {
+  background: transparent;
+  color: Black;
+  font-weight: 600;
+  padding: 0px;
+  display: inline-block;
+}
+
+.covid19 .btn:hover {
+  border-bottom: 2px solid black;
+}
+
+.covid19 .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Covid Section Ends */
+
+/* links Start*/
+
+.links {
+  background-color: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0px;
+}
+
+.links-inner {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+}
+
+.links-inner li {
+  line-height: 2.8;
+}
+
+.links-inner ul,
+.footer-inner ul {
+  list-style: none;
+}
+.links a,
+.footer a {
+  color: #616161;
+}
+
+/* footer */
+
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer-inner {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-inner ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .home-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .xbox .content p {
+    display: none;
+  }
+
+  .xbox .content h2 {
+    margin-bottom: 20px;
+  }
+
+  .carbon .content {
+    width: 85%;
+  }
+
+  .links .links-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer li {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav .nav-left {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-500px);
+    border-right: #ccc 1px solid;
+    padding: 30px;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .main-nav .nav-left.show {
+    transform: translateX(-20px);
+  }
+
+  .main-nav .nav-left li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .main-nav .nav-left li:last-child {
+    border-bottom: 0px;
+  }
+
+  .main-nav .nav-right {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+
+  .covid19 h1 {
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    /* text-align: center; */
+  }
+
+  .covid19 p {
+    font-size: 16px;
+    border: 1px solid red;
+    width: 90%;
+    text-align: center;
+  }
+  .follow {
+    width: 100%;
+  }
+}
